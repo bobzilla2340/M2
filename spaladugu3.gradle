@@ -3,15 +3,9 @@ apply plugin: 'java'
 sourceCompatibility='1.7'
 version='1.0'
 
-
-
-jar {
-	manifest {
-		attributes 'Implementation-Title': 'M2_spaladugu3',
-		'Implementation-Version': version, 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
-	}
+repositories {
+	mavenCentral()
 }
-
 
 dependencies {
 	compile files('lib/resources.jar')
@@ -19,3 +13,15 @@ dependencies {
 	compile fileTree(dir: 'lib', include: '*.jar')
 	runtime fileTree(dir: 'lib', include: '*.jar')
 }
+
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'M2_spaladugu3',
+		'Implementation-Version': version, 
+		'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+		'Class-Path': '../../lib/resources.jar'
+	}
+}
+
+
+
