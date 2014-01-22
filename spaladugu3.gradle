@@ -1,7 +1,7 @@
 apply plugin: 'java'
 
 sourceCompatibility='1.7'
-version='1.0'
+version='spaladugu3-1.0'
 
 repositories {
 	mavenCentral()
@@ -13,6 +13,9 @@ dependencies {
 	compile fileTree(dir: 'lib', include: '*.jar')
 	runtime fileTree(dir: 'lib', include: '*.jar')
 }
+
+
+
 
 jar {
 	manifest {
