@@ -1,3 +1,21 @@
 apply plugin: 'java'
 
+sourceCompatibility='1.7'
+version='1.0'
 
+
+
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'M2_spaladugu3',
+		'Implementation-Version': version, 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+	}
+}
+
+
+dependencies {
+	compile files('lib/resources.jar')
+	runtime files('lib/resources.jar')
+	compile fileTree(dir: 'lib', include: '*.jar')
+	runtime fileTree(dir: 'lib', include: '*.jar')
+}
