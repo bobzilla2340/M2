@@ -31,7 +31,7 @@ public class Person4 {
      */
     private String calc(String input) {
       String result = "";
-      Char c = 0;
+      char c = 0;
       for (int i = 0; i < input.length(); i++) {
         c = input.charAt(i);
         c++;
