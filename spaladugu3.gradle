@@ -15,8 +15,6 @@ dependencies {
 }
 
 
-
-
 jar {
 	manifest {
 		attributes 'Implementation-Title': 'M2_spaladugu3',
