@@ -1,3 +1,9 @@
+//Name: Sai Naga Manoj Paladugu
+//Email: spaladugu3@gatech.edu
+//GTID: 902905939
+//Team Bobzilla (Team 17)
+//Gradle Build File
+
 apply plugin: 'java'
 
 sourceCompatibility='1.7'
